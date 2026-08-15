@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17001f">
+<title>Zihad ❤️ Esha — Our Story</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{min-height:100vh;overflow-x:hidden;font-family:"Noto Sans Bengali","Hind Siliguri","Segoe UI",Arial,sans-serif;color:#fff;background:radial-gradient(circle at 50% 0%,#690d5b,#30002f 35%,#110018 75%,#08000d)}
+.bg{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.6;animation:twinkle 2.5s infinite}
+.heart{position:absolute;bottom:-50px;opacity:.45;animation:up linear forwards}
+.open{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;position:relative;z-index:2}
+.box{width:min(94%,600px);padding:40px 24px;border-radius:30px;background:#ffffff12;border:1px solid #ffffff24;backdrop-filter:blur(6px);box-shadow:0 0 50px #ff00962e;animation:appear 1.2s}
+.couple{font-size:70px;animation:float 2.5s infinite}
+h1{font-size:clamp(38px,9vw,64px);margin:12px 0;background:linear-gradient(90deg,#ff76cb,#fff,#ff9ddd);-webkit-background-clip:text;color:transparent}
+.open p{font-size:18px;line-height:1.8;color:#ffe8f7;margin-bottom:28px}
+.btn{border:0;padding:14px 28px;border-radius:999px;color:#fff;background:linear-gradient(45deg,#ff1493,#ff61c0);box-shadow:0 8px 28px #ff14934d;font-size:17px;font-weight:bold;cursor:pointer}
+.story{position:relative;z-index:2;max-width:900px;margin:auto;padding:45px 14px 80px}
+.head{text-align:center;margin-bottom:35px}.head span{font-size:45px}.head h2{font-size:clamp(36px,8vw,58px);margin:8px 0;background:linear-gradient(90deg,#ff72c8,#fff,#ff72c8);-webkit-background-clip:text;color:transparent}.head h3{color:#ffb7e2;font-size:24px}
+.card{position:relative;padding:26px 23px 26px 27px;margin-bottom:22px;border-radius:25px;background:#ffffff12;border:1px solid #ffffff20;box-shadow:0 10px 35px #0003;backdrop-filter:blur(5px);opacity:0;transform:translateY(28px);transition:.8s}
+.card.show{opacity:1;transform:none}.card:before{content:"";position:absolute;left:0;top:20px;bottom:20px;width:4px;border-radius:10px;background:linear-gradient(#ff5cbb,#ffb2e3)}
+.num{font-size:15px;color:#ff9edb;margin-bottom:10px;font-weight:bold}.card p{font-size:18px;line-height:2;color:#fff3fa}.card strong,.final strong{color:#ffacdF}
+.final{position:relative;z-index:2;text-align:center;padding:55px 14px 90px}.finalbox{max-width:750px;margin:auto;padding:38px 22px;border-radius:30px;background:#ffffff14;border:1px solid #ffffff24;box-shadow:0 0 45px #ff009633}.animals{font-size:43px;letter-spacing:5px}.final h2{font-size:clamp(38px,9vw,68px);margin:10px 0;background:linear-gradient(90deg,#ff72c8,#fff,#ff72c8);-webkit-background-clip:text;color:transparent}.final h3{font-size:30px;margin-bottom:24px}.msg{font-size:19px;line-height:2;color:#fff2fa}.forever{margin-top:24px;color:#ff9ddd;font-size:20px;letter-spacing:2px}.secret{margin-top:24px}.secretbox{display:none;margin:18px auto 0;padding:18px;border-radius:20px;background:#ffffff10;max-width:580px;font-size:18px;line-height:1.9}.secretbox.show{display:block;animation:fade .8s}
+@keyframes appear{from{opacity:0;transform:translateY(35px) scale(.94)}to{opacity:1;transform:none}}@keyframes float{50%{transform:translateY(-9px) scale(1.03)}}@keyframes twinkle{50%{opacity:1;transform:scale(1.6)}}@keyframes up{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(max-width:600px){.box{padding:32px 18px}.couple{font-size:58px}.open p,.card p{font-size:16px}.card{padding:23px 17px 23px 22px}.finalbox{padding:32px 17px}.animals{font-size:34px}.final h3{font-size:25px}.msg{font-size:16px;line-height:1.9}}
+</style>
+</head>
+<body>
+<div class="bg" id="bg"></div>
+
+<section class="open" id="opening">
+<div class="box">
+<div class="couple">🧑🏻‍❤️‍🧑🏻</div>
+<h1>Zihad ❤️ Esha</h1>
+<p>কিছু গল্প শুধু গল্প নয়...<br>কিছু গল্প সারাজীবন মনে রাখার মতো হয়। ✨<br><br>এটা আমাদের গল্প। ❤️</p>
+<button class="btn" onclick="startStory()">আমাদের গল্প শুরু হোক 💌</button>
+</div>
+</section>
+
+<main class="story">
+<div class="head"><span>❤️</span><h2>আমাদের গল্প</h2><h3>Zihad ❤️ Esha</h3></div>
+
+<article class="card"><div class="num">01 • শুরুটা</div><p>প্রথমবার প্রপোজ করার পর রিজেকশন খেয়েছিলাম। তারপরও চেষ্টা করে গিয়েছি। অনেক দিন পিছনে পিছনে ঘুরেছি। এরপর আগস্টের ১৭ তারিখ, তোমার জন্মদিনের পরের দিন আবার প্রপোজ করার পর তুমি আমাকে গ্রহণ করো। তারপর থেকেই আমাদের পথচলা শুরু হলো। ❤️</p></article>
+
+<article class="card"><div class="num">02 • আমাদের স্কুলের দিনগুলো</div><p>২০২২ সাল থেকে আজ ২০২৬ সাল—এতগুলো বছর একসাথে পার করে ফেললাম। স্কুলে থাকার সময় প্রতিদিন দেখা করা, কথা বলা, লুকিয়ে লুকিয়ে ঘুরে বেড়ানো—এমন অনেক কিউট কিউট মুহূর্ত আর অনেক সুন্দর স্মৃতি আছে, যেগুলো সারাজীবন আমাদের সাথে থাকবে। সেই দিনগুলোর কথা মনে করলে এখনও মন ভালো হয়ে যায়। ❤️</p></article>
+
+<article class="card"><div class="num">03 • সেই প্রথম হাত ধরা</div><p>তারপর আমাদের রিলেশনের ৪ মাস পর প্রথমবার হাত ধরেছিলাম। প্রথম দিন হাত ধরার সময় আমার হাত কাঁপছিল। ওই মুহূর্তটা কোনোদিন ভোলার মতো নয়। সেই সময়টা সত্যিই অনেক সুন্দর ছিল। একসাথে অনেক সুন্দর দিন কাটিয়েছি আমরা। ❤️</p></article>
+
+<article class="card"><div class="num">04 • দূরত্বের দিনগুলো</div><p>তারপর কলেজে আসার পর আমাদের জীবনে লং-ডিস্ট্যান্স শুরু হলো। মাসে একবার করে দেখা করা হতো। দূরে থাকার পরেও তুমি সবসময় আমার খেয়াল রাখছো। আমার কখন কী লাগবে, কী লাগবে না—সবকিছুই দেখতে। যখনই আমার কোনো কিছুর প্রয়োজন হয়েছে, তুমি আমাকে সেটা দিয়েছো। সবসময় আমাকে সাহায্য করেছো। এই জিনিসগুলো কোনোদিন ভোলার মতো নয়।</p></article>
+
+<article class="card"><div class="num">05 • তোমাকে নিয়ে গর্ব</div><p>আমি সত্যিই অনেক প্রাউড ফিল করি যে, আমার জীবনে তোমার মতো একজন মানুষ পেয়েছি। ❤️</p></article>
+
+<article class="card"><div class="num">06 • আমার ভুলগুলো</div><p>এর মাঝে আমি অনেক ভুল করেছি, অনেক কিছু করেছি। আমি তোমাকে অনেক কষ্ট দিয়েছি। তারপরও তুমি আমার ভুলগুলো মাফ করে আমার পাশে থেকেছো। তবুও কখনো আমাকে ছেড়ে যাওনি। সবসময় আমাকে সাপোর্ট করেছো, আমার পাশে থেকেছো। ❤️</p></article>
+
+<article class="card"><div class="num">07 • তোমার জন্য</div><p>আমি সে হিসেবে তোমার জন্য তেমন কিছু করতে পারিনি। কিন্তু ইনশাআল্লাহ, একদিন আমি তোমার জন্য সবকিছু করব। ❤️</p></article>
+
+<article class="card"><div class="num">08 • আমাদের স্মৃতিগুলো</div><p>আমাদের এই রিলেশনটা অনেক দিনের। আমাদের অনেক ভালো ভালো স্মৃতি আছে, অনেক সুন্দর মুহূর্ত আছে, আর আছে অনেক কিউট কিউট গল্প—যেগুলো আমাদের সারাজীবন মনে থাকবে। 🥹❤️</p></article>
+
+<article class="card"><div class="num">09 • আমার সবচেয়ে বড় পাওয়া</div><p>কিন্তু সবকিছুর মাঝে আমি একজন <strong>সেরা মানুষকে</strong> পেয়েছি, যে আমার জীবনটাকে অনেক সহজ করে দিয়েছে। আমার খারাপ সময়ে পাশে থেকেছে, ভালো সময়ে আমার সাথে আনন্দ ভাগ করে নিয়েছে। এমন একজন মানুষকে জীবনে পাওয়া সত্যিই অনেক বড় পাওয়া। ❤️</p></article>
+</main>
+
+<section class="final">
+<div class="finalbox">
+<div class="animals">🐰 💕  💕 🐱</div>
+<div class="couple">🐻</div>
+<h2>Happy Anniversary</h2><h3>Zihad ❤️ Esha</h3>
+<div class="msg">শেষে শুধু একটা কথাই বলব—<br><br><strong>তুমি প্লিজ সারাজীবন এভাবেই আমার পাশে থেকো। ❤️</strong><br><br><strong>I love you, I love you so much. ❤️</strong><br><br>আমাকে কখনো একা রেখে যেও না। আমি এভাবেই তোমাকে সাথে নিয়ে আমার সামনের দিনগুলো কাটাতে চাই।<br><br><strong>আজীবন তোমার হাতটা ধরে থাকতে চাই। ❤️♾️</strong></div>
+<div class="forever">∞ Together Forever ∞</div>
+<div class="secret"><button class="btn" onclick="showSecret()">তোমার জন্য আরও একটা কথা 💗</button><div class="secretbox" id="secretbox">পৃথিবী যতই বদলে যাক, সময় যতই চলে যাক—আমার একটা ইচ্ছা সবসময় একই থাকবে। ❤️<br><br><strong>তোমার হাতটা ধরে, তোমাকে সাথে নিয়ে জীবনের বাকি গল্পটা লিখতে চাই। 🥹❤️</strong></div></div>
+</div>
+</section>
+
+<script>
+const bg=document.getElementById("bg");
+for(let i=0;i<35;i++){let s=document.createElement("i");s.className="star";s.style.left=Math.random()*100+"vw";s.style.top=Math.random()*100+"vh";s.style.animationDelay=Math.random()*2.5+"s";bg.appendChild(s)}
+function heart(){let h=document.createElement("div");h.className="heart";h.textContent=Math.random()>.5?"❤️":"💖";h.style.left=Math.random()*100+"vw";h.style.fontSize=14+Math.random()*18+"px";h.style.animationDuration=5+Math.random()*4+"s";bg.appendChild(h);setTimeout(()=>h.remove(),9500)}
+setInterval(()=>{if(document.visibilityState==="visible")heart()},1200);
+function startStory(){document.getElementById("opening").style.display="none";document.querySelector(".story").scrollIntoView({behavior:"smooth"});for(let i=0;i<15;i++)setTimeout(heart,i*70)}
+const cards=document.querySelectorAll(".card");
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.12});
+cards.forEach(c=>observer.observe(c));
+function showSecret(){document.getElementById("secretbox").classList.toggle("show");for(let i=0;i<12;i++)setTimeout(heart,i*60)}
+</script>
+</body>
+</html>
